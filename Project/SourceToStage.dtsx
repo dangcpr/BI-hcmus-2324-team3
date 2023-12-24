@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SourceToStage"
   DTS:PackageType="5"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{7B068934-B203-46B3-8783-77F2DC6C29E9}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{433CADDB-29B2-4754-9DD3-0BB7DAF32701}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,6 +38,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DANGCPR;Initial Catalog=SuperSale_MetaData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SourceToStage-{7DF04B42-49A4-49DD-8AEB-D2C62C58E7B1}DANGCPR.SuperSale_MetaData;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DANGCPR.SuperSale_MetaData 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5D95A4F0-0076-4C98-A2F2-5FAA4643607C}"
+      DTS:ObjectName="DANGCPR.SuperSale_MetaData 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DANGCPR;Initial Catalog=SuperSale_MetaData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SourceToStage-{5D95A4F0-0076-4C98-A2F2-5FAA4643607C}DANGCPR.SuperSale_MetaData 1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -109,7 +121,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="get lset,cet city branch_a"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -134,7 +146,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="get lset,cet product branch_a"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -159,7 +171,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="get lset,cet productline branch_a"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -226,7 +238,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="set cet city branch_a"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -243,7 +255,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="set cet product branch_a"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -260,7 +272,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="set cet productline branch_a 1"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -294,7 +306,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="set lset to metadata 1"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -311,7 +323,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="set lset to metadata 2"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -328,7 +340,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="set lset to metadata 3"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -346,6 +358,48 @@
       DTS:ObjectName="source to stage city"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\source to stage city.EventHandlers[OnError]"
+          DTS:CreationName="OnError"
+          DTS:DTSID="{04C1B594-BC48-4229-9EA5-B1F4CFA9EBBC}"
+          DTS:EventID="137438953"
+          DTS:EventName="OnError"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{08AD092B-66A1-45D9-94E0-82E38A267568}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\source to stage city.EventHandlers[OnError]\Execute SQL Task"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{dcbac424-3763-47d7-bbcc-ce13727f2a31}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Execute SQL Task"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="SqlStatementSource">"INSERT INTO [ETL_Error] values ('"+ @[System::PackageID]+"','"+ @[System::MachineName]+"'.'"+ @[System::PackageName]+"','"+ @[System::TaskName]+"','"+(DT_WSTR,12) @[System::ErrorCode]+"','"+ @[System::ErrorDescription]+"',getdate())"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{7DF04B42-49A4-49DD-8AEB-D2C62C58E7B1}"
+                  SQLTask:SqlStatementSource="INSERT INTO [ETL_Error] values ('{61E4B38C-F8C4-421E-863E-33E1256C1437}','DANGCPR'.'SourceToStage','Execute SQL Task','0','',getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -422,13 +476,6 @@
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\source to stage city\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Branch]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="Branch"
-                      externalMetadataColumnId="Package\source to stage city\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Branch]"
-                      lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[Branch]" />
                     <inputColumn
                       refId="Package\source to stage city\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
                       cachedDataType="wstr"
@@ -527,7 +574,8 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT * FROM [city$] 
+where (Create_at &gt; ? and Create_at &lt;= ?) or (Update_at &gt; ? and Update_at &lt;= ?)</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -544,11 +592,11 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">2</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
+                  name="ParameterMapping">"Parameter0:Input",{D7125CBB-7B32-4A0E-BECF-8803058D78E7};"Parameter1:Input",{54B40ED4-1F04-4416-AC2D-C06C7DBF6C27};"Parameter2:Input",{D7125CBB-7B32-4A0E-BECF-8803058D78E7};"Parameter3:Input",{54B40ED4-1F04-4416-AC2D-C06C7DBF6C27};</property>
               </properties>
               <connections>
                 <connection
@@ -563,16 +611,6 @@
                   refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[Branch]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Branch]"
-                      length="255"
-                      lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[Branch]"
-                      name="Branch"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[City]"
                       dataType="wstr"
@@ -600,6 +638,16 @@
                       externalMetadataColumnId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Update_at]"
                       lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[Update_at]"
                       name="Update_at"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[Branch]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Branch]"
+                      length="255"
+                      lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Output].Columns[Branch]"
+                      name="Branch"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -630,12 +678,6 @@
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Branch]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Branch]"
-                      name="Branch" />
-                    <outputColumn
                       refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City]"
                       dataType="wstr"
                       length="255"
@@ -663,6 +705,12 @@
                       lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Branch]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\source to stage city\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Branch]"
+                      name="Branch" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -2133,7 +2181,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate City"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2150,7 +2198,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate Product"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2167,7 +2215,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="truncate ProductLine"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2323,6 +2371,77 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
       DTS:ObjectName="Constraint 9"
       DTS:To="Package\set lset to metadata 1" />
   </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{697AF111-8C74-4F5B-9DB4-957B11889488}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{584389D8-5599-40C7-B1AF-1838433E0498}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{78737cb6-1110-4bd5-a687-5a699e235ce3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{7DF04B42-49A4-49DD-8AEB-D2C62C58E7B1}"
+              SQLTask:SqlStatementSource="INSERT INTO [dbo].[ETL_Error]&#xA;           ([Pk_ID]&#xA;           ,[Machine_Name]&#xA;           ,[Package_Name]&#xA;           ,[Error_Code]&#xA;           ,[Error_Description]&#xA;           ,[Dated])&#xA;     VALUES&#xA;           (? &#xA;           ,?&#xA;           ,?&#xA;           ,?&#xA;           ,?&#xA;           ,getdate())&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="System::PackageID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="System::MachineName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::ErrorCode"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="12" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::ErrorDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -2509,14 +2628,14 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.5520430437341,0"
+              EndConnector="71.55204304373,0"
               Start="0,0"
-              End="64.0520430437341,0">
+              End="64.05204304373,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="64.0520430437341,0" />
+                    End="64.05204304373,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2531,14 +2650,14 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.1612237299673,0"
+              EndConnector="38.1612237299698,0"
               Start="0,0"
-              End="30.6612237299673,0">
+              End="30.6612237299698,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="30.6612237299673,0" />
+                    End="30.6612237299698,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2770,19 +2889,31 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="286.428571910578,83.7058823321621" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\source to stage city">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\source to stage city\OLE DB Destination"
-          TopLeft="223.99999666214,120.99999819696" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\source to stage city\OLE DB Source"
           TopLeft="230.999996557832,19.9999997019768" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\source to stage city\OLE DB Destination"
+          TopLeft="223.99999666214,120.99999819696" />
         <EdgeLayout
           Id="Package\source to stage city.Paths[OLE DB Source Output]"
           TopLeft="307.499996609986,61.5999997019768">
@@ -2802,14 +2933,24 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\source to stage city.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\source to stage city.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="60,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <PipelineComponentMetadata
     design-time-name="Package\source to stage city\OLE DB Destination">
     <Properties>
@@ -2840,7 +2981,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
     design-time-name="Package\source to stage product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\source to stage product\OLE DB Source"
@@ -2868,9 +3009,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2967,7 +3106,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
     design-time-name="Package\source to stage sales">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\source to stage sales\OLE DB Source"
@@ -2995,7 +3134,9 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

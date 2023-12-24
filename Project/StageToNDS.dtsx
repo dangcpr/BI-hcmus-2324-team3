@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="StageToNDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{9EDE0132-DB45-4529-9729-F1E0FB108360}">
+  DTS:VersionBuild="78"
+  DTS:VersionGUID="{A19B1B68-24DD-4BA1-9304-E95B7987BEF5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,6 +26,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DANGCPR;Initial Catalog=SuperSale;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-StageToNDS-{FACA8871-4576-4545-BBA9-A583324E40D5}DANGCPR.SuperSale1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DANGCPR.SuperSale_MetaData]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E254EC98-CC1E-4166-9A04-8DD3474AAE41}"
+      DTS:ObjectName="DANGCPR.SuperSale_MetaData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DANGCPR;Initial Catalog=SuperSale_MetaData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-StageToNDS-{E254EC98-CC1E-4166-9A04-8DD3474AAE41}DANGCPR.SuperSale_MetaData;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -7056,6 +7068,77 @@ where [refTable].[ProductLineID] = ?</property>
       DTS:ObjectName="Constraint"
       DTS:To="Package\sales" />
   </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{F742F036-D8FD-4733-BCE6-9232BDF57F55}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{495537CC-CC0E-48A7-AE53-E78DB6B8BE95}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{c606be06-7a16-48f5-b9ee-d3705c6324d2}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E254EC98-CC1E-4166-9A04-8DD3474AAE41}"
+              SQLTask:SqlStatementSource="INSERT INTO [dbo].[ETL_Error]&#xA;           ([Pk_ID]&#xA;           ,[Machine_Name]&#xA;           ,[Package_Name]&#xA;           ,[Error_Code]&#xA;           ,[Error_Description]&#xA;           ,[Dated])&#xA;     VALUES&#xA;           (? &#xA;           ,?&#xA;           ,?&#xA;           ,?&#xA;           ,?&#xA;           ,getdate())&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="System::PackageID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="System::MachineName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::ErrorCode"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="12" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::ErrorDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="512" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -7150,6 +7233,18 @@ where [refTable].[ProductLineID] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="302.142857658316,56.9411764732694" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\sales">
     <LayoutInfo>
@@ -7282,9 +7377,7 @@ where [refTable].[ProductLineID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7306,9 +7399,7 @@ where [refTable].[ProductLineID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7330,9 +7421,7 @@ where [refTable].[ProductLineID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7585,33 +7674,33 @@ where [refTable].[ProductLineID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="119.466664371888,57.9999988377094"
+              EndConnector="119.466664371888,57.999998837709"
               Start="0,0"
-              End="119.466664371888,50.4999988377094">
+              End="119.466664371888,50.499998837709">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.4597010224168" />
+                    End="0,19.4597010224166" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.4597010224168"
-                    Point2="0,23.4597010224168"
-                    Point3="4,23.4597010224168" />
+                    Point1="0,19.4597010224166"
+                    Point2="0,23.4597010224166"
+                    Point3="4,23.4597010224166" />
                   <mssgle:LineSegment
-                    End="115.466664371888,23.4597010224168" />
+                    End="115.466664371888,23.4597010224166" />
                   <mssgle:CubicBezierSegment
-                    Point1="115.466664371888,23.4597010224168"
-                    Point2="119.466664371888,23.4597010224168"
-                    Point3="119.466664371888,27.4597010224168" />
+                    Point1="115.466664371888,23.4597010224166"
+                    Point2="119.466664371888,23.4597010224166"
+                    Point3="119.466664371888,27.4597010224166" />
                   <mssgle:LineSegment
-                    End="119.466664371888,50.4999988377094" />
+                    End="119.466664371888,50.499998837709" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="3.92694546719388,28.4597010224168,111.6127734375,11.609375"
+              BoundingBox="3.92694546719388,28.4597010224166,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

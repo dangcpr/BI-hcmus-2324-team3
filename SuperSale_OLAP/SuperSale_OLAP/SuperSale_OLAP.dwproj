@@ -64,7 +64,7 @@
           <ConfigurationSetting>
             <Id>Super Sale DDS</Id>
             <Name>Super Sale DDS</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DANGCPR;Integrated Security=SSPI;Initial Catalog=SuperSale_DDS</Value>
+            <Value xsi:type="xsd:string">Provider=MSOLEDBSQL.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=SuperSale_DDS</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

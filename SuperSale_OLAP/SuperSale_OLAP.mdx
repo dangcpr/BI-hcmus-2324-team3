@@ -1,0 +1,50 @@
+﻿//Lưu ý: Chọn và excute từng câu query riêng lẻ
+//Tình hình mua hàng theo từng chi nhánh
+SELECT
+	{[Measures].[Quantity Customer], [Measures].[Quantity Sold], [Measures].[Rating], [Measures].[Revenue]}
+	on columns,
+	[Dim City].[City].[City]
+	on rows
+FROM [Super Sale DDS];
+
+
+//Tình hình mua hàng theo từng loại sản phẩm
+SELECT
+	{[Measures].[Quantity Customer], [Measures].[Quantity Sold], [Measures].[Rating], [Measures].[Revenue]}
+	on columns,
+	[Dim Product Line].[Product Line].[Product Line] 
+	on rows
+FROM [Super Sale DDS];
+
+
+//Tình hình mua hàng theo thời gian (theo từng tháng trong từng năm)
+SELECT
+	{[Measures].[Quantity Customer], [Measures].[Quantity Sold], [Measures].[Rating], [Measures].[Revenue]}
+	on columns,
+	crossjoin ([Dim Date].[Hierarchy].[Year], [Dim Date].[Month].[Month])
+	on rows
+FROM [Super Sale DDS];
+
+
+//Tình hình mua hàng theo hình thức thanh toán
+SELECT
+	{[Measures].[Quantity Customer], [Measures].[Quantity Sold], [Measures].[Rating], [Measures].[Revenue]}
+	on columns,
+	[Dim Payment Method].[Payment Method].[Payment Method]
+	on rows
+FROM [Super Sale DDS];
+
+
+//Tình hình mua hàng theo từng chi nhánh, từng loại sản phẩm, theo thời gian, hình thức thanh toán
+SELECT
+	{[Measures].[Quantity Customer], 
+	[Measures].[Quantity Sold], 
+	[Measures].[Rating], 
+	[Measures].[Revenue]}
+	on columns,
+	non empty crossjoin ([Dim City].[City].[City], 
+						[Dim Product Line].[Product Line].[Product Line], 
+						[Dim Date].[Hierarchy].[Year], 
+						[Dim Payment Method].[Payment Method].[Payment Method])
+	on rows
+FROM [Super Sale DDS];

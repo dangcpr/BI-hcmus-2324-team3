@@ -1,0 +1,4 @@
+- Cài SSAS của SQL Server (run lại file cài đặt SQL Server chọn bản Custom, nhớ chọn analysis services trong phần Feature Selection): https://www.mssqltips.com/sqlservertip/6637/how-to-install-ssas-2019/
+- Sửa Impersonation Information trong data source của project (Double click data source file để mở, rồi nhập Windows account với username: DomainName\Username (xem trong SQL Server lúc connect có chọn Windows Authentication phía dưới có hiển thị user name), password)
+- Run project để deploy
+- Vào SQL Server chọn Server type: Analysis Services để connect và excute MDX file

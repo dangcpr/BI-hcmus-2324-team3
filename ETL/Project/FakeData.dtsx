@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FakeData"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{43A4B9D8-7FEF-4A56-8A57-F947CD8FF8F2}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{EE1C1203-0728-4F44-8F73-949FAE95533D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2490,9 +2490,9 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="232,41.6"
-          Id="Package\sales - excel to source sql server"
-          TopLeft="73.5714286003185,50.0588235381256" />
+          Size="224.8,41.6"
+          Id="Package\city - excel to source sql server"
+          TopLeft="73.5714287280428,322.705882070077" />
         <NodeLayout
           Size="244,41.6"
           Id="Package\product - excel to source sql server"
@@ -2502,51 +2502,47 @@
           Id="Package\product line - excel to source sql server"
           TopLeft="75.7142858754617,247.764705665178" />
         <NodeLayout
-          Size="224.8,41.6"
-          Id="Package\city - excel to source sql server"
-          TopLeft="73.5714287280428,322.705882070077" />
+          Size="232,41.6"
+          Id="Package\sales - excel to source sql server"
+          TopLeft="73.5714286003185,50.0588235381256" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\sales - excel to source sql server">
+    design-time-name="Package\city - excel to source sql server">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164.8,41.6"
-          Id="Package\sales - excel to source sql server\OLE DB Command"
-          TopLeft="199.999997019768,297.999995559454" />
+          Id="Package\city - excel to source sql server\OLE DB Command"
+          TopLeft="201.999996989966,242.999996379018" />
         <NodeLayout
           Size="152.8,41.6"
-          Id="Package\sales - excel to source sql server\Derived Column"
-          TopLeft="203.999996960163,206.99999691546" />
+          Id="Package\city - excel to source sql server\Derived Column"
+          TopLeft="205.999996930361,148.999997779727" />
         <NodeLayout
           Size="165.6,41.6"
-          Id="Package\sales - excel to source sql server\excel to sql source"
+          Id="Package\city - excel to source sql server\excel to sql source"
           TopLeft="195.999997079373,376.999995931983" />
         <NodeLayout
           Size="138.4,41.6"
-          Id="Package\sales - excel to source sql server\Excel Source"
-          TopLeft="208.571429015422,48.1764705460067" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\sales - excel to source sql server\Data Conversion"
-          TopLeft="200.999997004867,131.999998033047" />
+          Id="Package\city - excel to source sql server\Excel Source"
+          TopLeft="208.571429015422,46.176470575809" />
         <EdgeLayout
-          Id="Package\sales - excel to source sql server.Paths[Derived Column Output]"
-          TopLeft="281.399996989966,248.59999691546">
+          Id="Package\city - excel to source sql server.Paths[Derived Column Output]"
+          TopLeft="283.399996960163,190.599997779727">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49.3999986439943"
+              EndConnector="0,52.3999985992906"
               Start="0,0"
-              End="0,41.8999986439943">
+              End="0,44.8999985992906">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.8999986439943" />
+                    End="0,44.8999985992906" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2556,19 +2552,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\sales - excel to source sql server.Paths[Data Conversion Output]"
-          TopLeft="279.499996982515,173.599998033047">
+          Id="Package\city - excel to source sql server.Paths[Excel Source Output]"
+          TopLeft="280.085712972892,87.776470575809">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,33.399998882413"
+              EndConnector="0,61.223527203918"
               Start="0,0"
-              End="0,25.899998882413">
+              End="0,53.723527203918">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.899998882413" />
+                    End="0,53.723527203918" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2578,41 +2574,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\sales - excel to source sql server.Paths[Excel Source Output]"
-          TopLeft="278.185713010144,89.7764705460067">
+          Id="Package\city - excel to source sql server.Paths[OLE DB Command Output]"
+          TopLeft="281.599997034669,284.599996379018">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.2235274870401"
+              EndConnector="0,92.399999552965"
               Start="0,0"
-              End="0,34.7235274870401">
+              End="0,84.899999552965">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.7235274870401" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\sales - excel to source sql server.Paths[OLE DB Command Output]"
-          TopLeft="280.59999704957,339.599995559454">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.400000372529"
-              Start="0,0"
-              End="0,29.900000372529">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.900000372529" />
+                    End="0,84.899999552965" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2624,6 +2598,32 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\city - excel to source sql server\excel to sql source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\city - excel to source sql server\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\product - excel to source sql server">
     <LayoutInfo>
@@ -2857,40 +2857,44 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\city - excel to source sql server">
+    design-time-name="Package\sales - excel to source sql server">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164.8,41.6"
-          Id="Package\city - excel to source sql server\OLE DB Command"
-          TopLeft="201.999996989966,242.999996379018" />
+          Id="Package\sales - excel to source sql server\OLE DB Command"
+          TopLeft="199.999997019768,297.999995559454" />
         <NodeLayout
           Size="152.8,41.6"
-          Id="Package\city - excel to source sql server\Derived Column"
-          TopLeft="205.999996930361,148.999997779727" />
+          Id="Package\sales - excel to source sql server\Derived Column"
+          TopLeft="203.999996960163,206.99999691546" />
         <NodeLayout
           Size="165.6,41.6"
-          Id="Package\city - excel to source sql server\excel to sql source"
+          Id="Package\sales - excel to source sql server\excel to sql source"
           TopLeft="195.999997079373,376.999995931983" />
         <NodeLayout
           Size="138.4,41.6"
-          Id="Package\city - excel to source sql server\Excel Source"
-          TopLeft="208.571429015422,46.176470575809" />
+          Id="Package\sales - excel to source sql server\Excel Source"
+          TopLeft="208.571429015422,48.1764705460067" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\sales - excel to source sql server\Data Conversion"
+          TopLeft="200.999997004867,131.999998033047" />
         <EdgeLayout
-          Id="Package\city - excel to source sql server.Paths[Derived Column Output]"
-          TopLeft="283.399996960163,190.599997779727">
+          Id="Package\sales - excel to source sql server.Paths[Derived Column Output]"
+          TopLeft="281.399996989966,248.59999691546">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.3999985992906"
+              EndConnector="0,49.3999986439943"
               Start="0,0"
-              End="0,44.8999985992906">
+              End="0,41.8999986439943">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.8999985992906" />
+                    End="0,41.8999986439943" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2900,19 +2904,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\city - excel to source sql server.Paths[Excel Source Output]"
-          TopLeft="280.085712972892,87.776470575809">
+          Id="Package\sales - excel to source sql server.Paths[Data Conversion Output]"
+          TopLeft="279.499996982515,173.599998033047">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.223527203918"
+              EndConnector="0,33.399998882413"
               Start="0,0"
-              End="0,53.723527203918">
+              End="0,25.899998882413">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.723527203918" />
+                    End="0,25.899998882413" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2922,19 +2926,41 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\city - excel to source sql server.Paths[OLE DB Command Output]"
-          TopLeft="281.599997034669,284.599996379018">
+          Id="Package\sales - excel to source sql server.Paths[Excel Source Output]"
+          TopLeft="278.185713010144,89.7764705460067">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,92.399999552965"
+              EndConnector="0,42.2235274870401"
               Start="0,0"
-              End="0,84.899999552965">
+              End="0,34.7235274870401">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,84.899999552965" />
+                    End="0,34.7235274870401" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\sales - excel to source sql server.Paths[OLE DB Command Output]"
+          TopLeft="280.59999704957,339.599995559454">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.400000372529"
+              Start="0,0"
+              End="0,29.900000372529">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.900000372529" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2946,31 +2972,5 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\city - excel to source sql server\excel to sql source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\city - excel to source sql server\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

@@ -7,3 +7,4 @@ DELETE FROM Dim_Date;
 DELETE FROM Dim_Gender;
 DELETE FROM Dim_PaymentMethod;
 DELETE FROM Dim_ProductLine;
+DELETE FROM Dim_Product;

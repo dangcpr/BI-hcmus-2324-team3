@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="72f95136-a9e8-4199-95cb-69e1e42a7f2b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e3179113-bfeb-446b-b9dc-f4fa79762b7d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Payment Method</ID>
   <Name>Dim Payment Method</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="794e9641-90a7-4bcb-a121-3ac0f7bc18da">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0dbbf77c-2509-4ac8-bb8a-ef5e7b4ce80a">
     <DataSourceViewID>Super Sale DDS</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="18f43a4e-ae28-43a5-b376-5091e42bba21">
+  <ErrorConfiguration dwd:design-time-name="e0fe3dc6-8f59-432b-ba3d-67caf461b8b7">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="7fd6be08-e560-4eaa-8667-f1a0a982ea5d">
+    <Attribute dwd:design-time-name="0f3dc6bf-53b8-40f4-9d50-93f32d40b903">
       <ID>ID Payment Method SK</ID>
       <Name>ID Payment Method SK</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6997ff4f-e6ac-4db3-99dc-7cb5df249bd4">
+        <KeyColumn dwd:design-time-name="0f8f9b05-2e9e-49ca-b774-a63d503da7b8">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1d26850-eb13-45cc-8066-b6aa4d856c76">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94f4c563-2658-4c9f-9e59-94e7cb3bbb6a">
             <TableID>dbo_Dim_PaymentMethod</TableID>
             <ColumnID>IDPaymentMethod_SK</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="3080acba-5681-42d7-91f7-f7cec1e5453d">
+        <AttributeRelationship dwd:design-time-name="9b48f6da-28c5-42d2-8908-94d421612657">
           <AttributeID>ID Payment Method</AttributeID>
           <Name>ID Payment Method</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6da5acb9-d196-4325-9bc7-5c2c54d4d909">
+        <AttributeRelationship dwd:design-time-name="a2198e8a-e4f9-404d-a82a-4716d918b415">
           <AttributeID>Payment Method</AttributeID>
           <Name>Payment Method</Name>
         </AttributeRelationship>
@@ -105,13 +105,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="accb0e1a-3e9c-4429-8691-137bcc11a6d7">
+    <Attribute dwd:design-time-name="0ca4271a-2c40-4681-aa4d-4f23be8243b7">
       <ID>ID Payment Method</ID>
       <Name>ID Payment Method</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="74e8a298-b56c-499a-b775-2d1358ab6b46">
+        <KeyColumn dwd:design-time-name="bffebbf4-273d-4c1a-b1a6-f2ca587b6cdc">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a661663-5d6c-48c1-98f9-24681215cdd3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76133ad2-21ba-4dea-856b-20a01f352587">
             <TableID>dbo_Dim_PaymentMethod</TableID>
             <ColumnID>IDPaymentMethod</ColumnID>
           </Source>
@@ -120,14 +120,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cea55e49-6b60-441b-9b7b-b83401c48482">
+    <Attribute dwd:design-time-name="3f7ea6cc-7f75-45fa-a25e-c84352f1c326">
       <ID>Payment Method</ID>
       <Name>Payment Method</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1f10e35b-ef15-4bb4-9dd5-00e1b17baa61">
+        <KeyColumn dwd:design-time-name="5a5e4bf4-dffb-47cf-8bbb-43dcdfb77bee">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9171f2ff-7c66-42b3-8db9-280c0e88df5c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f0f412ad-b839-44de-8f7b-838aaabbd1ce">
             <TableID>dbo_Dim_PaymentMethod</TableID>
             <ColumnID>PaymentMethod</ColumnID>
           </Source>

@@ -12,7 +12,7 @@ FROM [Super Sale DDS];
 SELECT
 	{[Measures].[Quantity Customer], [Measures].[Quantity Sold], [Measures].[Rating], [Measures].[Revenue]}
 	on columns,
-	[Dim Product Line].[Product Line].[Product Line] 
+	[Dim Product].[Product Line].[Product Line] 
 	on rows
 FROM [Super Sale DDS];
 
@@ -43,7 +43,7 @@ SELECT
 	[Measures].[Revenue]}
 	on columns,
 	non empty crossjoin ([Dim City].[City].[City], 
-						[Dim Product Line].[Product Line].[Product Line], 
+						[Dim Product].[Product Line].[Product Line], 
 						[Dim Date].[Hierarchy].[Year], 
 						[Dim Payment Method].[Payment Method].[Payment Method])
 	on rows

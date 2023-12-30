@@ -1,0 +1,3 @@
+- 30/12/2023:
+  - Thêm bảng Dim_Product và thuộc tính IDProudct vào bảng Fact_Sales.
+  - OLAP thay đổi.

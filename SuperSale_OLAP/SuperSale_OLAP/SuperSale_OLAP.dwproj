@@ -20,28 +20,28 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Dim Customer Type.dim</Name>
-      <FullPath>Dim Customer Type.dim</FullPath>
+      <Name>Dim Gender.dim</Name>
+      <FullPath>Dim Gender.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim City.dim</Name>
-      <FullPath>Dim City.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Dim Payment Method.dim</Name>
-      <FullPath>Dim Payment Method.dim</FullPath>
+      <Name>Dim Product.dim</Name>
+      <FullPath>Dim Product.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Date.dim</Name>
       <FullPath>Dim Date.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Product Line.dim</Name>
-      <FullPath>Dim Product Line.dim</FullPath>
+      <Name>Dim Payment Method.dim</Name>
+      <FullPath>Dim Payment Method.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Gender.dim</Name>
-      <FullPath>Dim Gender.dim</FullPath>
+      <Name>Dim City.dim</Name>
+      <FullPath>Dim City.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customer Type.dim</Name>
+      <FullPath>Dim Customer Type.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

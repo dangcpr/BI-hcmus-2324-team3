@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDSToDDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="146"
-  DTS:VersionGUID="{3AD0B304-F46F-4CFE-B9F7-2A62F3B9FF91}">
+  DTS:VersionBuild="161"
+  DTS:VersionGUID="{FF06EF55-80E7-4C1C-B718-835AB5C86DC3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,6 +38,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DANGCPR;Initial Catalog=SuperSale_DDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-NDSToDDS-{D8BEC705-620B-4053-A0E2-9D5B3E2D653A}DANGCPR.SuperSale_DDS 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DANGCPR.SuperSale_DDS 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2754CEA5-5EC6-426A-A062-3295676BA665}"
+      DTS:ObjectName="DANGCPR.SuperSale_DDS 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DANGCPR;Initial Catalog=SuperSale_DDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-NDSToDDS-{2754CEA5-5EC6-426A-A062-3295676BA665}DANGCPR.SuperSale_DDS 2;Trust Server Certificate=True;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -119,7 +131,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="get lset,cet dim_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -194,7 +206,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="get lset,cet dim_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -219,7 +231,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="get lset,cet dim_paymentmethod"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4691,7 +4703,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="get lset,cet dim_productline"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5875,7 +5887,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="set cet dim_productline"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5892,7 +5904,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="set lset dim_productline"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5947,7 +5959,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="get lset,cet dim_product"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -7793,7 +7805,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="set cet dim_product"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -7810,7 +7822,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="set lset dim_product"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="5">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -7855,7 +7867,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="set cet dim_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7906,7 +7918,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="set cet dim_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7923,7 +7935,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="set cet dim_paymentmethod"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7940,7 +7952,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="set lset dim_city"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7991,7 +8003,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="set lset dim_gender"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8008,7 +8020,7 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="set lset dim_paymentmethod"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -9301,11 +9313,14 @@ or (Update_at &gt; ? and Update_at &lt;= ?)</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.ProductLine, S.CustomerTypeID, COUNT(*) AS Quantity, SUM(Total) AS Total, SUM(Quantity) AS Quantity_PL, SUM(Rating) AS Rating_T
-FROM NDS_Sales S
-JOIN NDS_Product P ON S.ProductID = P.ProductID
-WHERE (S.Create_at &gt; ? and S.Create_at &lt;= ?)
-or (S.Update_at &gt; ? and S.Update_at &lt;= ?)
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.ProductLine, S.CustomerTypeID, COUNT(*) AS Quantity, SUM(S.Total) AS Total, SUM(S.Quantity) AS Quantity_PL, SUM(S.rating) AS Rating_T
+FROM     NDS_sales AS S INNER JOIN
+                  NDS_Product AS P ON S.ProductID = P.ProductID
+WHERE  (S.InvoiceID IN
+                      (SELECT S.InvoiceID
+                       FROM      NDS_sales
+                       WHERE   (S.create_at &gt; ?) AND (S.create_at &lt;= ?) OR
+                                         (S.update_at &gt; ?) AND (S.update_at &lt;= ?)))
 GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.ProductLine, S.CustomerTypeID</property>
                     <property
                       dataType="System.String"
@@ -9590,6 +9605,327 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
                           refId="Package\ETL Fact\load to fact_sales\load nds sales.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
                           lineageId="Package\ETL Fact\load to fact_sales\load nds sales.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\ETL Fact\load to fact_sales\Lookup"
+                  componentClassID="Microsoft.Lookup"
+                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                  name="Lookup"
+                  usesDispositions="true"
+                  version="6">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement that generates the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Fact_Sales]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommandParam"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Fact_Sales]) [refTable]
+where [refTable].[IDPaymentMethod] = ? and [refTable].[IDBranch] = ? and [refTable].[IDDate] = ? and [refTable].[IDGender] = ? and [refTable].[IDCustomerType] = ? and [refTable].[IDProduct] = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the type of connection used to access the reference dataset."
+                      name="ConnectionType"
+                      typeConverter="LookupConnectionType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the cache type of the lookup table."
+                      name="CacheType"
+                      typeConverter="CacheType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                      name="NoMatchBehavior"
+                      typeConverter="LookupNoMatchBehavior">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                      name="NoMatchCachePercentage">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                      name="MaxMemoryUsage">25</property>
+                    <property
+                      dataType="System.Int64"
+                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                      name="MaxMemoryUsage64">25</property>
+                    <property
+                      dataType="System.String"
+                      description="Indicates whether to reference metadata in an XML format."
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IDDate" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDCustomerType" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDPaymentMethod" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDBranch" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDProduct" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDProductLine" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDGender" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="QuantityCustomer" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Revenue" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="QuantitySold" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Rating" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                      name="ParameterMap">#{Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDPaymentMethod_SK]};#{Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDBranch]};#{Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDDate]};#{Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDGender]};#{Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDCustomerType]};#{Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDProduct_SK]};</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                      name="TreatDuplicateKeysAsError">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\ETL Fact\load to fact_sales\Lookup.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DANGCPR.SuperSale_DDS]"
+                      connectionManagerRefId="Package.ConnectionManagers[DANGCPR.SuperSale_DDS]"
+                      description="Connection manager used to access lookup data."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input]"
+                      name="Lookup Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input].Columns[IDDate]"
+                          cachedDataType="i4"
+                          cachedName="IDDate"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDDate]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">IDDate</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input].Columns[IDPaymentMethod_SK]"
+                          cachedDataType="i4"
+                          cachedName="IDPaymentMethod_SK"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDPaymentMethod_SK]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">IDPaymentMethod</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input].Columns[IDBranch]"
+                          cachedDataType="i4"
+                          cachedName="IDBranch"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDBranch]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">IDBranch</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input].Columns[IDGender]"
+                          cachedDataType="i4"
+                          cachedName="IDGender"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDGender]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">IDGender</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input].Columns[IDCustomerType]"
+                          cachedDataType="i4"
+                          cachedName="IDCustomerType"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDCustomerType]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">IDCustomerType</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input].Columns[IDProduct_SK]"
+                          cachedDataType="i4"
+                          cachedName="IDProduct_SK"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDProduct_SK]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">IDProduct</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output]"
+                      errorOrTruncationOperation="Lookup"
+                      exclusionGroup="1"
+                      name="Lookup Match Output"
+                      synchronousInputId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDDate]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDDate]"
+                          name="IDDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDDate</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDCustomerType]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDCustomerType]"
+                          name="IDCustomerType"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDCustomerType</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDPaymentMethod]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDPaymentMethod]"
+                          name="IDPaymentMethod"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDPaymentMethod</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDBranch]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDBranch]"
+                          name="IDBranch"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDBranch</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDProduct]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDProduct]"
+                          name="IDProduct"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDProduct</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDProductLine]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDProductLine]"
+                          name="IDProductLine"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDProductLine</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDGender]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output].Columns[IDGender]"
+                          name="IDGender"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IDGender</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup No Match Output]"
+                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                      exclusionGroup="1"
+                      name="Lookup No Match Output"
+                      synchronousInputId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Lookup Error Output"
+                      synchronousInputId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -11280,6 +11616,283 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
                   </outputs>
                 </component>
                 <component
+                  refId="Package\ETL Fact\load to fact_sales\OLE DB Command"
+                  componentClassID="Microsoft.OLEDBCommand"
+                  contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                  name="OLE DB Command"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[Fact_Sales]
+   SET [QuantityCustomer] = ?
+      ,[Revenue] = ?
+      ,[QuantitySold] = ?
+      ,[Rating] = ?
+ WHERE [IDDate] = ?
+      AND [IDCustomerType] = ?
+      AND [IDPaymentMethod] = ?
+      AND [IDBranch] = ?
+      AND [IDProduct] = ?
+      AND [IDProductLine] = ?
+      AND [IDGender] = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DANGCPR.SuperSale_DDS]"
+                      connectionManagerRefId="Package.ConnectionManagers[DANGCPR.SuperSale_DDS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input]"
+                      errorOrTruncationOperation="Command Execution"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Command Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[Quantity]"
+                          cachedDataType="i4"
+                          cachedName="Quantity"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[Quantity]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[Total]"
+                          cachedDataType="r8"
+                          cachedName="Total"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[Total]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[Quantity_PL]"
+                          cachedDataType="i4"
+                          cachedName="Quantity_PL"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[Quantity_PL]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[Rating_T]"
+                          cachedDataType="r8"
+                          cachedName="Rating_T"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[Rating_T]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDDate]"
+                          cachedDataType="i4"
+                          cachedName="IDDate"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDDate]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDCustomerType]"
+                          cachedDataType="i4"
+                          cachedName="IDCustomerType"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDCustomerType]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDPaymentMethod_SK]"
+                          cachedDataType="i4"
+                          cachedName="IDPaymentMethod_SK"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDPaymentMethod_SK]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDBranch]"
+                          cachedDataType="i4"
+                          cachedName="IDBranch"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDBranch]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDProduct_SK]"
+                          cachedDataType="i4"
+                          cachedName="IDProduct_SK"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDProduct_SK]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDProductLine]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="IDProductLine"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDProductLine]" />
+                        <inputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].Columns[IDGender]"
+                          cachedDataType="i4"
+                          cachedName="IDGender"
+                          externalMetadataColumnId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                          lineageId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output].Columns[IDGender]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                          dataType="i4"
+                          name="Param_0">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                          dataType="r8"
+                          name="Param_1">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                          dataType="r8"
+                          name="Param_2">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                          dataType="r8"
+                          name="Param_3">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                          dataType="i4"
+                          name="Param_4">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                          dataType="i4"
+                          name="Param_5">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                          dataType="i4"
+                          name="Param_6">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                          dataType="i4"
+                          name="Param_7">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                          dataType="i4"
+                          name="Param_8">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                          dataType="i4"
+                          name="Param_9">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                          dataType="i4"
+                          name="Param_10">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Outputs[OLE DB Command Output]"
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\ETL Fact\load to fact_sales\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\ETL Fact\load to fact_sales\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\ETL Fact\load to fact_sales\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\ETL Fact\load to fact_sales\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -11338,8 +11951,8 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
                   <connections>
                     <connection
                       refId="Package\ETL Fact\load to fact_sales\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DANGCPR.SuperSale_DDS]"
-                      connectionManagerRefId="Package.ConnectionManagers[DANGCPR.SuperSale_DDS]"
+                      connectionManagerID="Package.ConnectionManagers[DANGCPR.SuperSale_DDS 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[DANGCPR.SuperSale_DDS 2]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14637,130 +15250,140 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
                   name="Derived Column Output"
                   startId="Package\ETL Fact\load to fact_sales\date to day, month, year.Outputs[Derived Column Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output4]"
-                  endId="Package\ETL Fact\load to fact_sales\Sort 2.Inputs[Sort Input]"
-                  name="Merge Join Output"
-                  startId="Package\ETL Fact\load to fact_sales\Merge Join 1.Outputs[Merge Join Output]" />
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Lookup Match Output]"
+                  endId="Package\ETL Fact\load to fact_sales\OLE DB Command.Inputs[OLE DB Command Input]"
+                  name="Lookup Match Output"
+                  startId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output3]"
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Lookup No Match Output]"
+                  endId="Package\ETL Fact\load to fact_sales\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Lookup No Match Output"
+                  startId="Package\ETL Fact\load to fact_sales\Lookup.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output1]"
                   endId="Package\ETL Fact\load to fact_sales\Sort 5.Inputs[Sort Input]"
                   name="Merge Join Output"
                   startId="Package\ETL Fact\load to fact_sales\Merge Join 2.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output5]"
-                  endId="Package\ETL Fact\load to fact_sales\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  name="Merge Join Output"
-                  startId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output1]"
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output2]"
                   endId="Package\ETL Fact\load to fact_sales\Sort 7.Inputs[Sort Input]"
                   name="Merge Join Output"
                   startId="Package\ETL Fact\load to fact_sales\Merge Join 3.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output]"
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output3]"
                   endId="Package\ETL Fact\load to fact_sales\Sort 9.Inputs[Sort Input]"
                   name="Merge Join Output"
                   startId="Package\ETL Fact\load to fact_sales\Merge Join 4.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output2]"
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output4]"
                   endId="Package\ETL Fact\load to fact_sales\Sort 3.Inputs[Sort Input]"
                   name="Merge Join Output"
                   startId="Package\ETL Fact\load to fact_sales\Merge Join.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output5]"
-                  endId="Package\ETL Fact\load to fact_sales\Sort 4.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\ETL Fact\load to fact_sales\load dds payment.Outputs[OLE DB Source Output]" />
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output5]"
+                  endId="Package\ETL Fact\load to fact_sales\Lookup.Inputs[Lookup Input]"
+                  name="Merge Join Output"
+                  startId="Package\ETL Fact\load to fact_sales\Merge Join 5.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output4]"
-                  endId="Package\ETL Fact\load to fact_sales\Sort 6.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\ETL Fact\load to fact_sales\load dds customertype.Outputs[OLE DB Source Output]" />
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output]"
+                  endId="Package\ETL Fact\load to fact_sales\Sort 2.Inputs[Sort Input]"
+                  name="Merge Join Output"
+                  startId="Package\ETL Fact\load to fact_sales\Merge Join 1.Outputs[Merge Join Output]" />
                 <path
                   refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output6]"
-                  endId="Package\ETL Fact\load to fact_sales\date to day, month, year.Inputs[Derived Column Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\ETL Fact\load to fact_sales\load nds sales.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output2]"
-                  endId="Package\ETL Fact\load to fact_sales\Sort 8.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\ETL Fact\load to fact_sales\load dds product.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output1]"
-                  endId="Package\ETL Fact\load to fact_sales\Sort gender.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\ETL Fact\load to fact_sales\load dds gender.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output]"
-                  endId="Package\ETL Fact\load to fact_sales\Sort.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\ETL Fact\load to fact_sales\load dds date.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output3]"
                   endId="Package\ETL Fact\load to fact_sales\Sort 1.Inputs[Sort Input]"
                   name="OLE DB Source Output"
                   startId="Package\ETL Fact\load to fact_sales\load dds city.Outputs[OLE DB Source Output]" />
                 <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output5]"
+                  endId="Package\ETL Fact\load to fact_sales\Sort.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\ETL Fact\load to fact_sales\load dds date.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output4]"
+                  endId="Package\ETL Fact\load to fact_sales\Sort gender.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\ETL Fact\load to fact_sales\load dds gender.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output3]"
+                  endId="Package\ETL Fact\load to fact_sales\Sort 8.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\ETL Fact\load to fact_sales\load dds product.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output2]"
+                  endId="Package\ETL Fact\load to fact_sales\date to day, month, year.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\ETL Fact\load to fact_sales\load nds sales.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output1]"
+                  endId="Package\ETL Fact\load to fact_sales\Sort 6.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\ETL Fact\load to fact_sales\load dds customertype.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output]"
+                  endId="Package\ETL Fact\load to fact_sales\Sort 4.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\ETL Fact\load to fact_sales\load dds payment.Outputs[OLE DB Source Output]" />
+                <path
                   refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output11]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 5.Inputs[Merge Join Right Input]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join.Inputs[Merge Join Left Input]"
                   name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 9.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 4.Inputs[Merge Join Right Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 7.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output2]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 2.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 1.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output3]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 1.Inputs[Merge Join Right Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 3.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output4]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 1.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort gender.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output5]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 3.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 4.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output6]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 3.Inputs[Merge Join Right Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 5.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output7]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join.Inputs[Merge Join Right Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort date.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output8]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 4.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 6.Outputs[Sort Output]" />
-                <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output9]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join 2.Inputs[Merge Join Right Input]"
-                  name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort 2.Outputs[Sort Output]" />
+                  startId="Package\ETL Fact\load to fact_sales\Sort.Outputs[Sort Output]" />
                 <path
                   refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output10]"
                   endId="Package\ETL Fact\load to fact_sales\Merge Join 5.Inputs[Merge Join Left Input]"
                   name="Sort Output"
                   startId="Package\ETL Fact\load to fact_sales\Sort 8.Outputs[Sort Output]" />
                 <path
-                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output1]"
-                  endId="Package\ETL Fact\load to fact_sales\Merge Join.Inputs[Merge Join Left Input]"
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output9]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 2.Inputs[Merge Join Right Input]"
                   name="Sort Output"
-                  startId="Package\ETL Fact\load to fact_sales\Sort.Outputs[Sort Output]" />
+                  startId="Package\ETL Fact\load to fact_sales\Sort 2.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output8]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 4.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 6.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output1]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 4.Inputs[Merge Join Right Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 7.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output6]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 3.Inputs[Merge Join Right Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 5.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output5]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 3.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 4.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output4]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 1.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort gender.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output3]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 1.Inputs[Merge Join Right Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 3.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output2]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 2.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 1.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output7]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join.Inputs[Merge Join Right Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort date.Outputs[Sort Output]" />
+                <path
+                  refId="Package\ETL Fact\load to fact_sales.Paths[Sort Output]"
+                  endId="Package\ETL Fact\load to fact_sales\Merge Join 5.Inputs[Merge Join Right Input]"
+                  name="Sort Output"
+                  startId="Package\ETL Fact\load to fact_sales\Sort 9.Outputs[Sort Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -14827,6 +15450,42 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
           DTS:To="Package\ETL Fact\get lset,cet fact_sales" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\insert success"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{ff7914b1-d4eb-4f67-b3ae-5b64969c0e3d}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="insert success"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C81653DE-D71A-47EF-9E8E-B0B7BBE1C3AC}"
+          SQLTask:SqlStatementSource="INSERT INTO [dbo].[ETL_Audit]&#xA;           ([Pk_ID]&#xA;           ,[Machine_Name]&#xA;           ,[Package_Name]&#xA;           ,[Result]&#xA;           ,[Dated])&#xA;     VALUES&#xA;           (? &#xA;           ,?&#xA;           ,?&#xA;           ,'Pass'&#xA;           ,getdate())&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="System::PackageID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="512" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="System::MachineName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="512" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="System::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="512" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -14837,20 +15496,28 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\ETL Fact" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{B833A716-215C-4E50-BC81-62EEFFA5A90A}"
+      DTS:From="Package\ETL Fact"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\insert success" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
-      DTS:refId="Package.EventHandlers[OnError]"
-      DTS:CreationName="OnError"
-      DTS:DTSID="{516C1F12-58A5-44E5-9636-99F571FC0BC0}"
-      DTS:EventID="1335010576"
-      DTS:EventName="OnError"
+      DTS:refId="Package.EventHandlers[OnTaskFailed]"
+      DTS:CreationName="OnTaskFailed"
+      DTS:DTSID="{4839E649-2502-4C57-B009-07B504ED4568}"
+      DTS:EventID="7274605"
+      DTS:EventName="OnTaskFailed"
       DTS:LocaleID="-1">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{01DF064B-4D1E-4C6A-A512-BD91D72F4846}"
+          DTS:DTSID="{B19111CA-3920-4213-9CB3-B08D4079D4E4}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -14860,10 +15527,10 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
       </DTS:Variables>
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task"
+          DTS:refId="Package.EventHandlers[OnTaskFailed]\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{FA4BA1F7-2A1D-427C-8906-C0214278B38C}"
+          DTS:DTSID="{55c76b41-c4e1-4750-a927-c8f802da668f}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
@@ -14872,7 +15539,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{1EFF122D-4BDB-41A0-979C-22FA5A893524}"
-              SQLTask:SqlStatementSource="INSERT INTO [dbo].[ETL_Error]&#xA;           ([Pk_ID]&#xA;           ,[Machine_Name]&#xA;           ,[Package_Name]&#xA;           ,[Error_Code]&#xA;           ,[Error_Description]&#xA;           ,[Dated])&#xA;     VALUES&#xA;           (? &#xA;           ,?&#xA;           ,?&#xA;           ,?&#xA;           ,?&#xA;           ,getdate())&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="INSERT INTO [dbo].[ETL_Audit]&#xA;           ([Pk_ID]&#xA;           ,[Machine_Name]&#xA;           ,[Package_Name]&#xA;           ,[Result]&#xA;           ,[Dated])&#xA;     VALUES&#xA;           (? &#xA;           ,?&#xA;           ,?&#xA;           ,'Fail'&#xA;           ,getdate())&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="System::PackageID"
@@ -14888,18 +15555,6 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="2"
                 SQLTask:DtsVariableName="System::PackageName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="512" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="3"
-                SQLTask:DtsVariableName="System::ErrorCode"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="12" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="4"
-                SQLTask:DtsVariableName="System::ErrorDescription"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="512" />
@@ -14961,6 +15616,184 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
           Size="213.6,41.6"
           Id="Package\ETL Dim\load to dim_paymentmethod"
           TopLeft="995.969389734612,203.478430962552" />
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\ETL Dim\Sequence Container\get lset,cet dim_productline"
+          TopLeft="17.0806141271485,99.8319326904235" />
+        <NodeLayout
+          Size="189.6,41.6"
+          Id="Package\ETL Dim\Sequence Container\load to dim_productline"
+          TopLeft="27.3489810795684,207.600840158986" />
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\ETL Dim\Sequence Container\set cet dim_productline"
+          TopLeft="27.9612265748783,5.5" />
+        <NodeLayout
+          Size="191.2,41.6"
+          Id="Package\ETL Dim\Sequence Container\set lset dim_productline"
+          TopLeft="22.2333354159484,291.898179198782" />
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container.PrecedenceConstraints[Constraint 11]"
+          TopLeft="122.014797603358,141.431932690424">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66.1689074685618"
+              Start="0,0"
+              End="0,58.6689074685618">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.6689074685618" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container.PrecedenceConstraints[Constraint 12]"
+          TopLeft="119.991158247758,249.200840158986">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.6973390397969"
+              Start="0,0"
+              End="0,35.1973390397969">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.1973390397969" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container.PrecedenceConstraints[Constraint 4 1 1 1 1 1]"
+          TopLeft="122.120920351008,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.7319326904235"
+              Start="0,0"
+              End="0,45.2319326904235">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.2319326904235" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="251.2,348.8"
+          Size="251.2,392"
+          Id="Package\ETL Dim\Sequence Container"
+          TopLeft="1224.1142890047,7.02941176336532" />
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\get lset,cet dim_product"
+          TopLeft="17.0806141271485,99.8319326904235" />
+        <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product"
+          TopLeft="27.3489810795684,207.600840158986" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\set cet dim_product"
+          TopLeft="27.9612265748783,5.5" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\set lset dim_product"
+          TopLeft="22.2333354159484,291.898179198782" />
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1.PrecedenceConstraints[Constraint 11]"
+          TopLeft="113.614797603358,141.431932690424">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66.1689074685625"
+              Start="0,0"
+              End="0,58.6689074685625">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.6689074685625" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1.PrecedenceConstraints[Constraint 12]"
+          TopLeft="111.591158247758,249.200840158986">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.697339039796"
+              Start="0,0"
+              End="0,35.197339039796">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.197339039796" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1.PrecedenceConstraints[Constraint 4 1 1 1 1 1]"
+          TopLeft="113.720920351013,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.7319326904235"
+              Start="0,0"
+              End="0,45.2319326904235">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.2319326904235" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="232,388.8"
+          Size="232,432"
+          Id="Package\ETL Dim\Sequence Container 1"
+          TopLeft="1504.9663284007,6.34705879403612" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\ETL Dim\set cet dim_city"
@@ -15059,6 +15892,28 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,37.0180673295172" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim.PrecedenceConstraints[Constraint 11]"
+          TopLeft="1475.3142890047,205.888235278701">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.6520393959936,0"
+              Start="0,0"
+              End="22.1520393959936,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="22.1520393959936,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15331,206 +16186,6 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="209.6,41.6"
-          Id="Package\ETL Dim\Sequence Container\get lset,cet dim_productline"
-          TopLeft="17.0806141271485,99.8319326904235" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container.PrecedenceConstraints[Constraint 4 1 1 1 1 1]"
-          TopLeft="122.120920351008,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.7319326904235"
-              Start="0,0"
-              End="0,45.2319326904235">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.2319326904235" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container.PrecedenceConstraints[Constraint 11]"
-          TopLeft="122.014797603358,141.431932690424">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,66.1689074685618"
-              Start="0,0"
-              End="0,58.6689074685618">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.6689074685618" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="189.6,41.6"
-          Id="Package\ETL Dim\Sequence Container\load to dim_productline"
-          TopLeft="27.3489810795684,207.600840158986" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container.PrecedenceConstraints[Constraint 12]"
-          TopLeft="119.991158247758,249.200840158986">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.6973390397969"
-              Start="0,0"
-              End="0,35.1973390397969">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.1973390397969" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188.8,41.6"
-          Id="Package\ETL Dim\Sequence Container\set cet dim_productline"
-          TopLeft="27.9612265748783,5.5" />
-        <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\ETL Dim\Sequence Container\set lset dim_productline"
-          TopLeft="22.2333354159484,291.898179198782" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="251.2,348.8"
-          Size="251.2,392"
-          Id="Package\ETL Dim\Sequence Container"
-          TopLeft="1224.1142890047,7.02941176336532" />
-        <NodeLayout
-          Size="192.8,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\get lset,cet dim_product"
-          TopLeft="17.0806141271485,99.8319326904235" />
-        <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product"
-          TopLeft="27.3489810795684,207.600840158986" />
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\set cet dim_product"
-          TopLeft="27.9612265748783,5.5" />
-        <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\set lset dim_product"
-          TopLeft="22.2333354159484,291.898179198782" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1.PrecedenceConstraints[Constraint 4 1 1 1 1 1]"
-          TopLeft="113.720920351013,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.7319326904235"
-              Start="0,0"
-              End="0,45.2319326904235">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.2319326904235" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1.PrecedenceConstraints[Constraint 11]"
-          TopLeft="113.614797603358,141.431932690424">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,66.1689074685625"
-              Start="0,0"
-              End="0,58.6689074685625">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.6689074685625" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1.PrecedenceConstraints[Constraint 12]"
-          TopLeft="111.591158247758,249.200840158986">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.697339039796"
-              Start="0,0"
-              End="0,35.197339039796">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.197339039796" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="232,388.8"
-          Size="232,432"
-          Id="Package\ETL Dim\Sequence Container 1"
-          TopLeft="1504.9663284007,6.34705879403612" />
-        <EdgeLayout
-          Id="Package\ETL Dim.PrecedenceConstraints[Constraint 11]"
-          TopLeft="1475.3142890047,205.888235278701">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="29.6520393959936,0"
-              Start="0,0"
-              End="22.1520393959936,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="22.1520393959936,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -15623,24 +16278,50 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="599.2,208.8"
-          Size="599.2,252"
+          PanelSize="599.2,196"
+          Size="599.2,239.2"
           Id="Package\ETL Fact"
-          TopLeft="929.190475965949,1199.38431319216" />
+          TopLeft="927.149659635074,1130.54817907439" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="1231.11904781444,1074.10588183078">
+          TopLeft="1230.098639649,1074.10588183078">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,125.278431361376"
+              EndConnector="0,56.442297243605"
               Start="0,0"
-              End="0,117.778431361376">
+              End="0,48.942297243605">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,117.778431361376" />
+                    End="0,48.942297243605" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\insert success"
+          TopLeft="1154.58775557438,1416.37478971689" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="1226.46870760473,1369.74817907439">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.6266106425026"
+              Start="0,0"
+              End="0,39.1266106425026">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.1266106425026" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15652,18 +16333,6 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <DtsEventHandler
-    design-time-name="Package.EventHandlers[OnError]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package.EventHandlers[OnError]\Execute SQL Task"
-          TopLeft="336.999994978309,75.9999988675118" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\ETL Dim\load to dim_city">
     <LayoutInfo>
@@ -16638,9 +17307,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16770,9 +17437,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16794,9 +17459,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16818,9 +17481,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16842,9 +17503,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17253,211 +17912,625 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Merge Join"
+          TopLeft="248.9,208.7" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\OLE DB Command 1"
+          TopLeft="374.5,411.9" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Union All"
+          TopLeft="253.7,615.099999999999" />
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\dim_product_line"
+          TopLeft="233.7,5.49999999999995" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\OLE DB Command"
+          TopLeft="88.3,513.5" />
+        <NodeLayout
+          Size="114.4,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\product"
+          TopLeft="58.5,5.49999999999995" />
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Slowly Changing Dimension"
+          TopLeft="209.7,310.3" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Derived Column 2"
+          TopLeft="232.5,716.699999999999" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Insert Destination 1"
+          TopLeft="228.1,818.299999999999" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Sort"
+          TopLeft="101.9,107.1" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Derived Column"
+          TopLeft="100.3,411.9" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Sort 1"
+          TopLeft="260.5,107.1" />
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Union All Output 1]"
+          TopLeft="313.7,656.699999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Sort Output1]"
+          TopLeft="313.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.2666666666667,59.9999999999999"
+              Start="0,0"
+              End="20.2666666666667,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.560975609756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.560975609756"
+                    Point2="0,35.560975609756"
+                    Point3="4,35.560975609756" />
+                  <mssgle:LineSegment
+                    End="16.2666666666667,35.560975609756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.2666666666667,35.560975609756"
+                    Point2="20.2666666666667,35.560975609756"
+                    Point3="20.2666666666667,39.560975609756" />
+                  <mssgle:LineSegment
+                    End="20.2666666666667,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Sort Output]"
+          TopLeft="150.7,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="142.733333333333,59.9999999999999"
+              Start="0,0"
+              End="142.733333333333,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.560975609756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.560975609756"
+                    Point2="0,35.560975609756"
+                    Point3="4,35.560975609756" />
+                  <mssgle:LineSegment
+                    End="138.733333333333,35.560975609756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="138.733333333333,35.560975609756"
+                    Point2="142.733333333333,35.560975609756"
+                    Point3="142.733333333333,39.560975609756" />
+                  <mssgle:LineSegment
+                    End="142.733333333333,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[OLE DB Source Output1]"
+          TopLeft="313.7,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[OLE DB Source Output]"
+          TopLeft="115.7,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35,59.9999999999999"
+              Start="0,0"
+              End="35,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="31,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31,30"
+                    Point2="35,30"
+                    Point3="35,34" />
+                  <mssgle:LineSegment
+                    End="35,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[OLE DB Command Output]"
+          TopLeft="170.7,555.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="124.333333333333,59.9999999999999"
+              Start="0,0"
+              End="124.333333333333,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5263157894736" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5263157894736"
+                    Point2="0,35.5263157894736"
+                    Point3="4,35.5263157894736" />
+                  <mssgle:LineSegment
+                    End="120.333333333333,35.5263157894736" />
+                  <mssgle:CubicBezierSegment
+                    Point1="120.333333333333,35.5263157894736"
+                    Point2="124.333333333333,35.5263157894736"
+                    Point3="124.333333333333,39.5263157894736" />
+                  <mssgle:LineSegment
+                    End="124.333333333333,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[New Output]"
+          TopLeft="313.7,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.6666666666666,263.2"
+              Start="0,0"
+              End="18.6666666666666,255.7">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,151.842105263158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,151.842105263158"
+                    Point2="0,155.842105263158"
+                    Point3="4,155.842105263158" />
+                  <mssgle:LineSegment
+                    End="14.6666666666666,155.842105263158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.6666666666666,155.842105263158"
+                    Point2="18.6666666666666,155.842105263158"
+                    Point3="18.6666666666666,159.842105263158" />
+                  <mssgle:LineSegment
+                    End="18.6666666666666,255.7" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-17.7580533854167,160.842105263158,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Merge Join Output]"
+          TopLeft="313.7,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Inferred Member Updates Output]"
+          TopLeft="363.7,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98,59.9999999999999"
+              Start="0,0"
+              End="98,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.506329113924"
+                    Point2="0,20.506329113924"
+                    Point3="4,20.506329113924" />
+                  <mssgle:LineSegment
+                    End="94,20.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94,20.506329113924"
+                    Point2="98,20.506329113924"
+                    Point3="98,24.506329113924" />
+                  <mssgle:LineSegment
+                    End="98,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-25.40298828125,25.506329113924,148.8059765625,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Historical Attribute Inserts Output]"
+          TopLeft="263.7,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-87,59.9999999999999"
+              Start="0,0"
+              End="-87,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.506329113924"
+                    Point2="0,20.506329113924"
+                    Point3="-4,20.506329113924" />
+                  <mssgle:LineSegment
+                    End="-83,20.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-83,20.506329113924"
+                    Point2="-87,20.506329113924"
+                    Point3="-87,24.506329113924" />
+                  <mssgle:LineSegment
+                    End="-87,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-118.55638671875,25.506329113924,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Derived Column Output1]"
+          TopLeft="313.7,758.299999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Derived Column Output]"
+          TopLeft="173.7,453.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product\Slowly Changing Dimension">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{327C8F24-69E0-447B-A714-A45FC97ABF04}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[Dim_Product]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Merge Join.Outputs[Merge Join Output].Columns[ProductID]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;IDProduct&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Merge Join.Outputs[Merge Join Output].Columns[IDProuductLine_SK]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;IDProductLine&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Merge Join.Outputs[Merge Join Output].Columns[UnitPrice]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;UnitPrice&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 2&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn&gt;Status&lt;/CurrentIndicatorColumn&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent&gt;Active&lt;/ValueCurrent&gt;
+  &lt;ValueExpired&gt;Expired&lt;/ValueExpired&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product\product">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product\dim_product_line">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\ETL Fact\load to fact_sales">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Merge Join 1"
-          TopLeft="594.999991133809,298.999995544553" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 1"
-          TopLeft="794.999988153577,295.999995589256" />
-        <NodeLayout
-          Size="144.8,41.6"
-          Id="Package\ETL Fact\load to fact_sales\load nds sales"
-          TopLeft="404.999993965029,44.9999993294478" />
-        <NodeLayout
-          Size="157.6,41.6"
-          Id="Package\ETL Fact\load to fact_sales\load dds product"
-          TopLeft="1417.99997994304,447.799997869134" />
-        <NodeLayout
-          Size="121.6,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort date"
-          TopLeft="418.999993756413,207.999996900558" />
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Merge Join 3"
-          TopLeft="997.999985128641,451.19999499321" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 3"
-          TopLeft="418.999993756413,299.999995529652" />
-        <NodeLayout
-          Size="142.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\load dds date"
-          TopLeft="130.999998047947,42.9999993592501" />
-        <NodeLayout
-          Size="133.6,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort gender"
-          TopLeft="602.9999910146,213.999996811151" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 5"
-          TopLeft="798.999988093972,451.199994337559" />
+          Id="Package\ETL Fact\load to fact_sales\Merge Join 5"
+          TopLeft="1427.14286018087,604.949999717974" />
         <NodeLayout
           Size="97.6,41.6"
           Id="Package\ETL Fact\load to fact_sales\Sort"
           TopLeft="149.999997764826,127.999998092651" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\OLE DB Destination"
-          TopLeft="1305.93807883561,717.808817476202" />
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\ETL Fact\load to fact_sales\load dds customertype"
-          TopLeft="1185.39998278916,375.199997437" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 7"
-          TopLeft="1017.59998658896,528.399994367361" />
+          Size="144.8,41.6"
+          Id="Package\ETL Fact\load to fact_sales\load nds sales"
+          TopLeft="404.999993965029,44.9999993294478" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\ETL Fact\load to fact_sales\Sort 4"
           TopLeft="1006.99998499453,371.199995529652" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort 6"
+          TopLeft="1225.59998348951,450.399995529652" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort 9"
+          TopLeft="1219.59998679757,607.399994382262" />
+        <NodeLayout
+          Size="142.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\load dds date"
+          TopLeft="130.999998047947,42.9999993592501" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort 8"
+          TopLeft="1449.5999833703,525.399995604158" />
+        <NodeLayout
+          Size="121.6,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort date"
+          TopLeft="418.999993756413,207.999996900558" />
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\ETL Fact\load to fact_sales\load dds product"
+          TopLeft="1417.99997994304,447.799997869134" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort 2"
+          TopLeft="603.999990999699,373.999994426966" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Merge Join 2"
+          TopLeft="783.99998831749,375.599995440245" />
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\ETL Fact\load to fact_sales\Merge Join"
           TopLeft="232.999996528029,213.999996811152" />
         <NodeLayout
           Size="138.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Merge Join 2"
-          TopLeft="783.99998831749,375.599995440245" />
+          Id="Package\ETL Fact\load to fact_sales\Merge Join 4"
+          TopLeft="1201.59998384714,525.199995142221" />
         <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 6"
-          TopLeft="1225.59998348951,450.399995529652" />
+          Size="184.8,41.6"
+          Id="Package\ETL Fact\load to fact_sales\load dds customertype"
+          TopLeft="1185.39998278916,375.199997437" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\ETL Fact\load to fact_sales\load dds payment"
           TopLeft="979.999985396862,286.599997243285" />
         <NodeLayout
           Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 9"
-          TopLeft="1219.59998679757,607.399994382262" />
+          Id="Package\ETL Fact\load to fact_sales\Sort 1"
+          TopLeft="794.999988153577,295.999995589256" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\load dds gender"
+          TopLeft="595.999991118908,132.599999538064" />
         <NodeLayout
           Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 2"
-          TopLeft="603.999990999699,373.999994426966" />
+          Id="Package\ETL Fact\load to fact_sales\Sort 3"
+          TopLeft="418.999993756413,299.999995529652" />
         <NodeLayout
           Size="137.6,41.6"
           Id="Package\ETL Fact\load to fact_sales\load dds city"
           TopLeft="782.999988332391,213.59999833107" />
         <NodeLayout
           Size="106.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Sort 8"
-          TopLeft="1449.5999833703,525.399995604158" />
+          Id="Package\ETL Fact\load to fact_sales\Sort 5"
+          TopLeft="798.999988093972,451.199994337559" />
         <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\load dds gender"
-          TopLeft="595.999991118908,132.599999538064" />
+          Size="133.6,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort gender"
+          TopLeft="602.9999910146,213.999996811151" />
         <NodeLayout
           Size="138.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Merge Join 4"
-          TopLeft="1201.59998384714,525.199995142221" />
+          Id="Package\ETL Fact\load to fact_sales\Merge Join 1"
+          TopLeft="594.999991133809,298.999995544553" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Merge Join 3"
+          TopLeft="997.999985128641,451.19999499321" />
         <NodeLayout
           Size="196,41.6"
           Id="Package\ETL Fact\load to fact_sales\date to day, month, year"
           TopLeft="378.99999435246,131.999998033047" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Sort 7"
+          TopLeft="1017.59998658896,528.399994367361" />
         <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output1]"
-          TopLeft="671.499991066754,174.199999538064">
+          Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output11]"
+          TopLeft="198.799997764826,169.599998092651">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.7999972730874"
+              EndConnector="98.9999987632037,44.3999987185001"
               Start="0,0"
-              End="0,32.2999972730874">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.2999972730874" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output]"
-          TopLeft="200.499997906387,84.5999993592501">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43.3999987334013"
-              Start="0,0"
-              End="0,35.8999987334013">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.8999987334013" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output4]"
-          TopLeft="660.699991066754,340.599995544553">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33.3999988824129"
-              Start="0,0"
-              End="0,25.8999988824129">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.8999988824129" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output3]"
-          TopLeft="852.699988205731,417.199995440245">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33.9999988973139"
-              Start="0,0"
-              End="0,26.4999988973139">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.4999988973139" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output2]"
-          TopLeft="297.799996528029,255.599996811152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="174.399997228384,44.3999987185002"
-              Start="0,0"
-              End="174.399997228384,36.8999987185002">
+              End="98.9999987632037,36.8999987185001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -17468,13 +18541,13 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
                     Point2="0,22.1999993592501"
                     Point3="4,22.1999993592501" />
                   <mssgle:LineSegment
-                    End="170.399997228384,22.1999993592501" />
+                    End="94.9999987632037,22.1999993592501" />
                   <mssgle:CubicBezierSegment
-                    Point1="170.399997228384,22.1999993592501"
-                    Point2="174.399997228384,22.1999993592501"
-                    Point3="174.399997228384,26.1999993592501" />
+                    Point1="94.9999987632037,22.1999993592501"
+                    Point2="98.9999987632037,22.1999993592501"
+                    Point3="98.9999987632037,26.1999993592501" />
                   <mssgle:LineSegment
-                    End="174.399997228384,36.8999987185002" />
+                    End="98.9999987632037,36.8999987185001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17484,63 +18557,19 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output1]"
-          TopLeft="1068.9999858588,492.79999499321">
+          Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output10]"
+          TopLeft="1499.57142177558,566.999995604158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,35.5999993741513"
+              EndConnector="0,37.9500041138158"
               Start="0,0"
-              End="0,28.0999993741513">
+              End="0,30.4500041138158">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.0999993741513" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output]"
-          TopLeft="1271.79998532236,566.799995142221">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.5999992400409"
-              Start="0,0"
-              End="0,33.0999992400409">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.0999992400409" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Derived Column Output]"
-          TopLeft="478.399994054437,173.599998033047">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.3999988675117"
-              Start="0,0"
-              End="0,26.8999988675117">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.8999988675117" />
+                    End="0,30.4500041138158" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17727,40 +18756,6 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output1]"
-          TopLeft="198.799997764826,169.599998092651">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="98.9999987632037,44.3999987185001"
-              Start="0,0"
-              End="98.9999987632037,36.8999987185001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.1999993592501" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.1999993592501"
-                    Point2="0,22.1999993592501"
-                    Point3="4,22.1999993592501" />
-                  <mssgle:LineSegment
-                    End="94.9999987632037,22.1999993592501" />
-                  <mssgle:CubicBezierSegment
-                    Point1="94.9999987632037,22.1999993592501"
-                    Point2="98.9999987632037,22.1999993592501"
-                    Point3="98.9999987632037,26.1999993592501" />
-                  <mssgle:LineSegment
-                    End="98.9999987632037,36.8999987185001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output]"
           TopLeft="1123.99998658896,547.599994754791">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17782,73 +18777,29 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output]"
+          TopLeft="1325.99998679757,626.974997050118">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="101.1428733833,0"
+              Start="0,0"
+              End="93.6428733833,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="93.6428733833,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output6]"
-          TopLeft="477.199994158744,86.5999993294478">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.399998703599"
-              Start="0,0"
-              End="0,37.899998703599">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.899998703599" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output5]"
-          TopLeft="1060.6999851957,328.199997243285">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.9999982863666"
-              Start="0,0"
-              End="0,35.4999982863666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.4999982863666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output4]"
-          TopLeft="1278.29998313934,416.799997437">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33.5999980926516"
-              Start="0,0"
-              End="0,26.0999980926516">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.0999980926516" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output3]"
           TopLeft="849.999988242984,255.19999833107">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17870,7 +18821,51 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output2]"
+          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output5]"
+          TopLeft="200.499997906387,84.5999993592501">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.3999987334013"
+              Start="0,0"
+              End="0,35.8999987334013">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.8999987334013" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output4]"
+          TopLeft="671.499991066754,174.199999538064">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.7999972730874"
+              Start="0,0"
+              End="0,32.2999972730874">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.2999972730874" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output3]"
           TopLeft="1499.79998165667,489.399997869134">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17891,86 +18886,332 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output2]"
+          TopLeft="477.199994158744,86.5999993294478">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.399998703599"
+              Start="0,0"
+              End="0,37.899998703599">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.899998703599" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output1]"
+          TopLeft="1278.29998313934,416.799997437">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.5999980926516"
+              Start="0,0"
+              End="0,26.0999980926516">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.0999980926516" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[OLE DB Source Output]"
+          TopLeft="1060.6999851957,328.199997243285">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.9999982863666"
+              Start="0,0"
+              End="0,35.4999982863666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.4999982863666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output4]"
+          TopLeft="297.799996528029,255.599996811152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="174.399997228384,44.3999987185002"
+              Start="0,0"
+              End="174.399997228384,36.8999987185002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.1999993592501" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.1999993592501"
+                    Point2="0,22.1999993592501"
+                    Point3="4,22.1999993592501" />
+                  <mssgle:LineSegment
+                    End="170.399997228384,22.1999993592501" />
+                  <mssgle:CubicBezierSegment
+                    Point1="170.399997228384,22.1999993592501"
+                    Point2="174.399997228384,22.1999993592501"
+                    Point3="174.399997228384,26.1999993592501" />
+                  <mssgle:LineSegment
+                    End="174.399997228384,36.8999987185002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output3]"
+          TopLeft="1271.79998532236,566.799995142221">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.5999992400409"
+              Start="0,0"
+              End="0,33.0999992400409">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.0999992400409" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output2]"
+          TopLeft="1068.9999858588,492.79999499321">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.5999993741513"
+              Start="0,0"
+              End="0,28.0999993741513">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.0999993741513" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output1]"
+          TopLeft="852.699988205731,417.199995440245">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.9999988973139"
+              Start="0,0"
+              End="0,26.4999988973139">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4999988973139" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output]"
+          TopLeft="660.699991066754,340.599995544553">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.3999988824129"
+              Start="0,0"
+              End="0,25.8999988824129">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.8999988824129" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Derived Column Output]"
+          TopLeft="478.399994054437,173.599998033047">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.3999988675117"
+              Start="0,0"
+              End="0,26.8999988675117">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.8999988675117" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\ETL Fact\load to fact_sales\Merge Join 5"
-          TopLeft="1427.14286018087,605.905882070077" />
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output10]"
-          TopLeft="1499.57142177558,566.999995604158">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38.905886465919"
-              Start="0,0"
-              End="0,31.405886465919">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.405886465919" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Fact\load to fact_sales.Paths[Sort Output11]"
-          TopLeft="1325.99998679757,627.452938226169">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="101.1428733833,0"
-              Start="0,0"
-              End="93.6428733832997,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="93.6428733832997,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="170.4,41.6"
+          Id="Package\ETL Fact\load to fact_sales\OLE DB Destination"
+          TopLeft="1246.41426918509,822.318621306164" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\ETL Fact\load to fact_sales\Lookup"
+          TopLeft="1430.17857348318,719.823529294463" />
         <EdgeLayout
           Id="Package\ETL Fact\load to fact_sales.Paths[Merge Join Output5]"
-          TopLeft="1496.34286018087,647.505882070077">
+          TopLeft="1496.34286018087,646.549999717974">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-105.204781345257,70.3029354061244"
+              EndConnector="-9.76428669768688,73.2735295764893"
               Start="0,0"
-              End="-105.204781345257,62.8029354061244">
+              End="-9.76428669768688,65.7735295764893">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.1514677030622" />
+                    End="0,32.6367647882446" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.1514677030622"
-                    Point2="0,35.1514677030622"
-                    Point3="-4,35.1514677030622" />
+                    Point1="0,32.6367647882446"
+                    Point2="0,36.6367647882446"
+                    Point3="-4,36.6367647882446" />
                   <mssgle:LineSegment
-                    End="-101.204781345257,35.1514677030622" />
+                    End="-5.76428669768688,36.6367647882446" />
                   <mssgle:CubicBezierSegment
-                    Point1="-101.204781345257,35.1514677030622"
-                    Point2="-105.204781345257,35.1514677030622"
-                    Point3="-105.204781345257,39.1514677030622" />
+                    Point1="-5.76428669768688,36.6367647882446"
+                    Point2="-9.76428669768688,36.6367647882446"
+                    Point3="-9.76428669768688,40.6367647882446" />
                   <mssgle:LineSegment
-                    End="-105.204781345257,62.8029354061244" />
+                    End="-9.76428669768688,65.7735295764893" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Lookup No Match Output]"
+          TopLeft="1486.57857348318,761.423529294463">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-154.964304298094,60.8950920117005"
+              Start="0,0"
+              End="-154.964304298094,53.3950920117005">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4475460058503" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.4475460058503"
+                    Point2="0,30.4475460058503"
+                    Point3="-4,30.4475460058503" />
+                  <mssgle:LineSegment
+                    End="-150.964304298094,30.4475460058503" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-150.964304298094,30.4475460058503"
+                    Point2="-154.964304298094,30.4475460058503"
+                    Point3="-154.964304298094,34.4475460058503" />
+                  <mssgle:LineSegment
+                    End="-154.964304298094,53.3950920117005" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-133.288538867797,35.4475460058503,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\ETL Fact\load to fact_sales\OLE DB Command"
+          TopLeft="1497.28571724314,822.235293780266" />
+        <EdgeLayout
+          Id="Package\ETL Fact\load to fact_sales.Paths[Lookup Match Output]"
+          TopLeft="1504.04524014985,761.423529294463">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.6404770932895,60.8117644858024"
+              Start="0,0"
+              End="75.6404770932895,53.3117644858024">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.8350143074886" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.8350143074886"
+                    Point2="0,24.8350143074886"
+                    Point3="4,24.8350143074886" />
+                  <mssgle:LineSegment
+                    End="71.6404770932895,24.8350143074886" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.6404770932895,24.8350143074886"
+                    Point2="75.6404770932895,24.8350143074886"
+                    Point3="75.6404770932895,28.8350143074886" />
+                  <mssgle:LineSegment
+                    End="75.6404770932895,53.3117644858024" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-10.3711481721052,29.8350143074886,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17981,19 +19222,6 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Fact\load to fact_sales\load dds product">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -18011,7 +19239,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Fact\load to fact_sales\OLE DB Destination">
+    design-time-name="Package\ETL Fact\load to fact_sales\load dds product">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -18050,6 +19278,19 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\ETL Fact\load to fact_sales\load dds gender">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\ETL Fact\load to fact_sales\load dds city">
     <Properties>
       <Property>
@@ -18063,7 +19304,7 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL Fact\load to fact_sales\load dds gender">
+    design-time-name="Package\ETL Fact\load to fact_sales\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -18075,489 +19316,40 @@ GROUP BY S.[Date], S.[Time], S.PaymentID, S.Branch, S.GenderID, S.ProductID, P.P
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product">
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL Fact\load to fact_sales\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Fact_Sales]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnTaskFailed]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="114.4,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\product"
-          TopLeft="58.5,5.49999999999995" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Sort"
-          TopLeft="101.9,107.1" />
-        <NodeLayout
-          Size="160,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\dim_product_line"
-          TopLeft="233.7,5.49999999999995" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[OLE DB Source Output]"
-          TopLeft="115.7,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="35,59.9999999999999"
-              Start="0,0"
-              End="35,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
-                  <mssgle:LineSegment
-                    End="31,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="31,30"
-                    Point2="35,30"
-                    Point3="35,34" />
-                  <mssgle:LineSegment
-                    End="35,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Sort 1"
-          TopLeft="260.5,107.1" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[OLE DB Source Output1]"
-          TopLeft="313.7,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Merge Join"
-          TopLeft="248.9,208.7" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Sort Output]"
-          TopLeft="150.7,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="142.733333333333,59.9999999999999"
-              Start="0,0"
-              End="142.733333333333,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.560975609756" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.560975609756"
-                    Point2="0,35.560975609756"
-                    Point3="4,35.560975609756" />
-                  <mssgle:LineSegment
-                    End="138.733333333333,35.560975609756" />
-                  <mssgle:CubicBezierSegment
-                    Point1="138.733333333333,35.560975609756"
-                    Point2="142.733333333333,35.560975609756"
-                    Point3="142.733333333333,39.560975609756" />
-                  <mssgle:LineSegment
-                    End="142.733333333333,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Sort Output1]"
-          TopLeft="313.7,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="20.2666666666667,59.9999999999999"
-              Start="0,0"
-              End="20.2666666666667,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.560975609756" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.560975609756"
-                    Point2="0,35.560975609756"
-                    Point3="4,35.560975609756" />
-                  <mssgle:LineSegment
-                    End="16.2666666666667,35.560975609756" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.2666666666667,35.560975609756"
-                    Point2="20.2666666666667,35.560975609756"
-                    Point3="20.2666666666667,39.560975609756" />
-                  <mssgle:LineSegment
-                    End="20.2666666666667,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="208,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Slowly Changing Dimension"
-          TopLeft="209.7,310.3" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Merge Join Output]"
-          TopLeft="313.7,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Derived Column"
-          TopLeft="100.3,411.9" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Historical Attribute Inserts Output]"
-          TopLeft="263.7,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-87,59.9999999999999"
-              Start="0,0"
-              End="-87,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.506329113924"
-                    Point2="0,20.506329113924"
-                    Point3="-4,20.506329113924" />
-                  <mssgle:LineSegment
-                    End="-83,20.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-83,20.506329113924"
-                    Point2="-87,20.506329113924"
-                    Point3="-87,24.506329113924" />
-                  <mssgle:LineSegment
-                    End="-87,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-118.55638671875,25.506329113924,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\OLE DB Command"
-          TopLeft="88.3,513.5" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Derived Column Output]"
-          TopLeft="173.7,453.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Union All"
-          TopLeft="253.7,615.099999999999" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[New Output]"
-          TopLeft="313.7,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18.6666666666666,263.2"
-              Start="0,0"
-              End="18.6666666666666,255.7">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,151.842105263158" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,151.842105263158"
-                    Point2="0,155.842105263158"
-                    Point3="4,155.842105263158" />
-                  <mssgle:LineSegment
-                    End="14.6666666666666,155.842105263158" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.6666666666666,155.842105263158"
-                    Point2="18.6666666666666,155.842105263158"
-                    Point3="18.6666666666666,159.842105263158" />
-                  <mssgle:LineSegment
-                    End="18.6666666666666,255.7" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-17.7580533854167,160.842105263158,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[OLE DB Command Output]"
-          TopLeft="170.7,555.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="124.333333333333,59.9999999999999"
-              Start="0,0"
-              End="124.333333333333,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5263157894736" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5263157894736"
-                    Point2="0,35.5263157894736"
-                    Point3="4,35.5263157894736" />
-                  <mssgle:LineSegment
-                    End="120.333333333333,35.5263157894736" />
-                  <mssgle:CubicBezierSegment
-                    Point1="120.333333333333,35.5263157894736"
-                    Point2="124.333333333333,35.5263157894736"
-                    Point3="124.333333333333,39.5263157894736" />
-                  <mssgle:LineSegment
-                    End="124.333333333333,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="162.4,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Derived Column 2"
-          TopLeft="232.5,716.699999999999" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Union All Output 1]"
-          TopLeft="313.7,656.699999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\Insert Destination 1"
-          TopLeft="228.1,818.299999999999" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Derived Column Output1]"
-          TopLeft="313.7,758.299999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product\OLE DB Command 1"
-          TopLeft="374.5,411.9" />
-        <EdgeLayout
-          Id="Package\ETL Dim\Sequence Container 1\load to dim_product.Paths[Inferred Member Updates Output]"
-          TopLeft="363.7,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="98,59.9999999999999"
-              Start="0,0"
-              End="98,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.506329113924"
-                    Point2="0,20.506329113924"
-                    Point3="4,20.506329113924" />
-                  <mssgle:LineSegment
-                    End="94,20.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="94,20.506329113924"
-                    Point2="98,20.506329113924"
-                    Point3="98,24.506329113924" />
-                  <mssgle:LineSegment
-                    End="98,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.40298828125,25.506329113924,148.8059765625,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Id="Package.EventHandlers[OnTaskFailed]\Execute SQL Task"
+          TopLeft="429.99999448657,105.999999314547" />
       </GraphLayout>
     </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product\product">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product\dim_product_line">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL Dim\Sequence Container 1\load to dim_product\Slowly Changing Dimension">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{327C8F24-69E0-447B-A714-A45FC97ABF04}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[Dim_Product]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Merge Join.Outputs[Merge Join Output].Columns[ProductID]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;IDProduct&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Merge Join.Outputs[Merge Join Output].Columns[IDProuductLine_SK]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;IDProductLine&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Merge Join.Outputs[Merge Join Output].Columns[UnitPrice]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;UnitPrice&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 2&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn&gt;Status&lt;/CurrentIndicatorColumn&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent&gt;Active&lt;/ValueCurrent&gt;
-  &lt;ValueExpired&gt;Expired&lt;/ValueExpired&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
+  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

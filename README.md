@@ -1,3 +1,6 @@
 - 30/12/2023:
   - Thêm bảng Dim_Product và thuộc tính IDProudct vào bảng Fact_Sales.
   - OLAP thay đổi.
+- 01/01/2024:
+  - Thêm bảng Dim_Product và thuộc tính IDProudct vào bảng Fact_Sales.
+  - Mining, Report + Dashboard.

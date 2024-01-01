@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,63 +19,63 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>y76cAyj/duszQ4R3OhI1LYz6LWg=30/12/2023 00:46:5330/12/2023 00:44:17</TimeStamp>
+        <TimeStamp>XaX27CpghxmJvNvGIc8iQMy6QZ4=01/01/2024 17:48:4530/12/2023 19:33:40</TimeStamp>
         <ID>
           <String>Super Sale DDS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>Do3gYUBlU959DV/80TbMtySXbVU=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>niVmRRpmAtOtsv+ku7sUetVaSiM=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
           <String>Super Sale DDS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>1reXul6PqsYUa1NjI2XUc/yRuEA=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>Fyjg0aLD9YlAE54k+8myQFXvQfk=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
-          <String>Dim Customer Type</String>
+          <String>Dim Gender</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>W4cF4jOSRnqWdTBHYLvtI/FlOHg=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>WdmRo73MCTOcyRL9HiQNnPxphSw=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
-          <String>Dim City</String>
+          <String>Dim Product</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>bhFxT6UqPLpNoQLvQ+cwVlLsLHc=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
-        <ID>
-          <String>Dim Payment Method</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jD/k1Nze263fuzCA0NygxwRndv8=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>aFB5Oozhx6N7FpB29w6JcJGQwac=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
           <String>Dim Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>IB+TnLGM+D+wr8ps/1iRvSgZsc0=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>jBe5x0+/71GPPworbLVvWrnrMPw=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
-          <String>Dim Product Line</String>
+          <String>Dim Payment Method</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>1UIso7XOwXYj06hLWRFmGajSAlo=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>d9LZWm9KhNOa+CCy71ruKDnr4Ms=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
-          <String>Dim Gender</String>
+          <String>Dim City</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q7FB4Rag96vKJuTdk0nDpVJjQEQ=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
+        <ID>
+          <String>Dim Customer Type</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>t1NoJl8SGKYKzq1/I63itWYXYV4=29/12/2023 23:38:0229/12/2023 23:38:02s4h/USKA0EsASODwwhSf6PykFa4=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+        <TimeStamp>vwXg9kYfUS8Ed1riS6KJvqLZpDw=30/12/2023 19:34:3430/12/2023 19:34:34Tfd3NvMKwwGG5Y1m4cS4LINut4E=30/12/2023 19:34:3430/12/2023 19:34:34</TimeStamp>
         <ID>
           <String>Super Sale DDS</String>
         </ID>
@@ -83,7 +83,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>1uC9StpAkR33Z5ZIMNMoXBz0BEo=29/12/2023 23:38:0229/12/2023 23:38:02</TimeStamp>
+      <TimeStamp>bECBSFX9kMhUsI+B5azNLUimKBQ=30/12/2023 15:54:0930/12/2023 15:54:09</TimeStamp>
       <ID>
         <String>SuperSale_OLAP</String>
       </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-12-29T17:46:58.776667Z</LastDeployed>
+  <LastDeployed>2024-01-01T10:58:44.056667Z</LastDeployed>
 </DeploymentSnapshot>

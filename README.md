@@ -4,3 +4,5 @@
 - 01/01/2024:
   - ETL 3 source.
   - Mining, Report + Dashboard.
+- 02/01/2024:
+  - Report kết quả ETL.

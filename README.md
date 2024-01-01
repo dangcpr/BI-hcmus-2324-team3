@@ -2,5 +2,5 @@
   - Thêm bảng Dim_Product và thuộc tính IDProudct vào bảng Fact_Sales.
   - OLAP thay đổi.
 - 01/01/2024:
-  - Thêm bảng Dim_Product và thuộc tính IDProudct vào bảng Fact_Sales.
+  - ETL 3 source.
   - Mining, Report + Dashboard.

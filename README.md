@@ -6,3 +6,5 @@
   - Mining, Report + Dashboard.
 - 02/01/2024:
   - Report kết quả ETL.
+- 04/01/2024:
+  - Fix Bug ETL.

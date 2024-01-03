@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FakeData"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{AEC41CA9-A9CA-4B19-87E6-6533D9ABD7F3}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{0AE740AC-28ED-4A8C-A30C-1FE423124781}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4830,15 +4830,15 @@
         <NodeLayout
           Size="224.8,41.6"
           Id="Package\city - excel to source sql server"
-          TopLeft="73.5714287280428,322.705882070077" />
+          TopLeft="398.174604022212,173.163398541026" />
         <NodeLayout
           Size="244,41.6"
           Id="Package\product - excel to source sql server"
-          TopLeft="73.5714286003185,151.658823538126" />
+          TopLeft="392.619048327106,53.0967321212515" />
         <NodeLayout
           Size="264,41.6"
           Id="Package\product line - excel to source sql server"
-          TopLeft="75.7142858754617,247.764705665178" />
+          TopLeft="386.031746853506,110.967320164171" />
         <NodeLayout
           Size="243.2,41.6"
           Id="Package\sales_a - excel to source sql server"
@@ -4846,11 +4846,11 @@
         <NodeLayout
           Size="243.2,41.6"
           Id="Package\sales_b - excel to source sql server"
-          TopLeft="370.714286503439,50.4705881910547" />
+          TopLeft="73.8888890461788,110.797385523797" />
         <NodeLayout
           Size="242.4,41.6"
           Id="Package\sales_c - excel to source sql server"
-          TopLeft="367.857143640215,151.811764595954" />
+          TopLeft="71.825396978295,176.452287450173" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5361,7 +5361,7 @@
     design-time-name="Package\sales_b - excel to source sql server">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\sales_b - excel to source sql server\Derived Column"
@@ -5401,7 +5401,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5423,7 +5425,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5445,7 +5449,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5467,7 +5473,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5503,7 +5511,7 @@
     design-time-name="Package\sales_c - excel to source sql server">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\sales_c - excel to source sql server\OLE DB Command"
@@ -5525,6 +5533,30 @@
           Id="Package\sales_c - excel to source sql server\OLE DB Destination"
           TopLeft="198.571428994135,386.999999737915" />
         <EdgeLayout
+          Id="Package\sales_c - excel to source sql server.Paths[Excel Source Output]"
+          TopLeft="278.185713010144,89.7764705460067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.2235274870401"
+              Start="0,0"
+              End="0,34.7235274870401">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.7235274870401" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\sales_c - excel to source sql server.Paths[Derived Column Output]"
           TopLeft="282.114282705772,248.59999691546">
           <EdgeLayout.Curve>
@@ -5543,7 +5575,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5565,7 +5599,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5587,29 +5623,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\sales_c - excel to source sql server.Paths[Excel Source Output]"
-          TopLeft="278.185713010144,89.7764705460067">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.2235274870401"
-              Start="0,0"
-              End="0,34.7235274870401">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.7235274870401" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
